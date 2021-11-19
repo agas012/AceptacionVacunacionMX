@@ -1,0 +1,147 @@
+﻿ID,Label
+R0,ID de la respuesta
+R1,Hos
+R2,Fecha en que se envió
+R12,Fecha de nacimiento:
+R13,Edad:
+R14,Sexo:
+R15,Estado civil:
+R16,¿Cuál es su escolaridad (años completos)?
+R17,¿Cuál es su ocupación actualmente?:
+R18,¿Cuál es su ocupación actualmente?: [Otro]
+R19,Tiene algún tipo de seguridad social: [Ninguna]
+R20,Tiene algún tipo de seguridad social: [IMSS]
+R21,Tiene algún tipo de seguridad social: [ISSSTE]
+R22,Tiene algún tipo de seguridad social: [PEMEX]
+R23,Tiene algún tipo de seguridad social: [SEDENA]
+R24,Tiene algún tipo de seguridad social: [INSABI]
+R25,Tiene algún tipo de seguridad social: [Otro]
+R26,Señale ¿Cuál es su enfermedad reumatológica? [Lupus eritematoso generalizado]
+R27,Señale ¿Cuál es su enfermedad reumatológica? [Artritis reumatoide]
+R28,Señale ¿Cuál es su enfermedad reumatológica? [Vasculitis ANCA]
+R29,Señale ¿Cuál es su enfermedad reumatológica? [Espondilitis anquilosante]
+R30,Señale ¿Cuál es su enfermedad reumatológica? [Esclerodermia]
+R31,Señale ¿Cuál es su enfermedad reumatológica? [Gota]
+R32,Señale ¿Cuál es su enfermedad reumatológica? [Síndrome de Sjögren]
+R33,"Señale ¿Cuál es su enfermedad reumatológica? [Miopatía inflamatoria (dermatomiositis, síndorme antisintetasa, polimiositis)]"
+R34,Señale ¿Cuál es su enfermedad reumatológica? [Síndrome de anticuerpos antifosfolípidos]
+R35,Señale ¿Cuál es su enfermedad reumatológica? [Artritits idiopática juvenil]
+R36,Señale ¿Cuál es su enfermedad reumatológica? [Enfermedad mixta del tejido conectivo]
+R37,Señale ¿Cuál es su enfermedad reumatológica? [Osteoartrosis]
+R38,Señale ¿Cuál es su enfermedad reumatológica? [Otro]
+R39,¿En qué año se le realizó el diagnóstico?
+R60,"Durante el año previo (en los últimos 12 meses), ¿Usted requirió hospitalización?"
+R62,¿Ya fue vacunado contra covid?
+R63,¿Ha tenido usted la oportunidad de vacunarse contra COVID-19?
+R64,¿Cuándo recibió la vacuna contra COVID-19
+R65,¿Cuenta con el esquema completo de vacunación (2 dosis)?
+R66,¿En qué país se vacuno?
+R67,¿En qué país se vacuno? [Otro]
+R68,¿Con qué marca lo/la vacunaron?
+R69,¿Con qué marca lo/la vacunaron? [Otro]
+R70,1. ¿Aceptaría alguna de las vacunas (aprobadas en México) para la COVID-19 si se le ofreciera?
+R71,2. En la actualidad existen varias vacunas para la COVID-19. Usted considera que:
+R72,3. Describiría mi actitud con respecto a recibir la vacuna para la COVID-19 como:
+R73,"4. Si ya estuviera disponible para usted una vacuna para la COVID-19, ¿qué haría?"
+R74,"5. Si mi familia o amigos estuvieran pensando en vacunarse para la COVID-19, yo haría lo siguiente:"
+R75,"6. Con respecto a recibir la vacuna para la COVID-19, yo me describiría como:"
+R76,7. Considero que recibir una vacuna para la COVID-19 es:
+R84,¿Cree que se infectará con COVID-19 durante los próximos 12 meses? 
+R85,¿Qué tan probable es que me funcione la vacuna COVID-19?
+R86,"Si recibo la vacuna COVID-19, ¿qué tan útil será para la comunidad?:"
+R87,"Si las personas como yo reciben la vacuna COVID-19, ¿qué es lo que pasará?:"
+R88,"La velocidad con la que se desarrolló y probó la vacuna COVID-19, ¿qué tan buena calidad tendrá?"
+R89,¿Qué tan probable es que funcione la vacuna COVID-19?:
+R90,"La velocidad con la que se desarrolló y probó la vacuna COVID-19, ¿qué tan segura  sera?"
+R91,"Si muchas personas no reciben la vacuna COVID-19, ¿cómo será?"
+R92,"Si recibo la vacuna COVID-19, ¿qué espero sentir?"
+R93,¿Cómo serán los efectos secundarios para las personas que reciban la vacuna COVID-19?
+R94,"¿Qué hará la vacuna COVID-19 con mi sistema inmunológico, si la recibo?"
+R95,¿Qué tan probable cree que es que se contagie del coronavirus (COVID-19)?
+R96,"¿Cómo calificaría la situación de la epidemia COVID-19, que se vive en México?"
+R97,"¿Qué me permitirá la vacuna COVID-19, si la recibo?"
+R98,"Recibir la vacuna COVID-19, ¿es una señal de?:"
+R99,"Recibir una nueva vacuna, como la de COVID-19, me hará sentir como un “conejillo de indias”."
+R100,"Seleccione el grado de acuerdo con la siguiente frase, “La vacuna para el COVID-19 debe de ser ofrecida por las autoridades de salud como un derecho, es decir, todos nos podemos vacunar si así lo deseamos. "
+R101,"Seleccione el grado de acuerdo con la siguiente frase, “La vacuna para el COVID-19 debe de ser impuesta por las autoridades de salud como una obligación, es decir, todos nos debemos de vacunar, queramos o no."
+R102,"En México, la vacuna se ofrece como un derecho, es decir si usted lo desea se puede vacunar (cuando lo toque). En caso de que, en vez de un derecho, fuese una obligación, ¿usted cambiaría su disposición a aplicarse la vacuna? "
+R104,En México existen diferentes tipos de vacunas para la enfermedad COVID-19. Seleccione la respuesta que mejor refleja su opinión con respecto a lo siguiente: “la marca o el tipo de vacuna para COVID-19 influye mi deseo o no de vacunarme”.
+R105,¿Cuántas veces se ha vacunado usted de influenza en los últimos cinco años? (Por favor seleccione solo una de las siguientes)
+R148,"Considerando las otras enfermedades que usted pudiera tener además de su enfermedad reumatológica, ¿Cómo se siente en este momento?  [¿Se siente?|Muy mal|Muy bien]"
+R149,"Con respecto al tratamiento de su enfermedad reumatológica, ¿cuánto diría usted que afecta a su sistema inmune o de defensa del organismo?"
+R150,Relación Médico-Paciente [Confío en mi médico]
+R151,Relación Médico-Paciente [Mi médico se esfuerza en ayudarme]
+R152,Relación Médico-Paciente [Puedo hablar con mi médico]
+R157,Comorbilidades: [Enfermedad pulmonar ]
+R158,Comorbilidades: [Infarto agudo de miocardio]
+R159,Comorbilidades: [Otra enfermedad cardiovascular ]
+R160,Comorbilidades: [Enfermedad vascular cerebral ]
+R161,Comorbilidades: [Hipertensión arterial sistémica ]
+R162,Comorbilidades: [Diabetes mellitus]
+R163,Comorbilidades: [Fractura de cadera/columna o pierna ]
+R164,Comorbilidades: [Depresión ]
+R165,Comorbilidades: [Cáncer ]
+R166,Comorbilidades: [Ulcera gastrointestinal ]
+R167,Comorbilidades: [Otras enfermedades gástricas]
+R154,"1. Considerando todas las expresiones clínicas de la enfermedad reumatológica que padece su paciente, ¿cómo definiría el grado de actividad que presenta hoy?"
+R155,2. ¿Cómo calificaría el control actual de la enfermedad reumatológica?
+R156,"3. Durante su consulta, usted sugirió o realizó algún cambio en el tratamiento reumatológico"
+R107,"En esta sección nos interesa conocer cómo afecta su enfermedad a su capacidad para desempeñar sus actividades en la vida diaria. [¿Pudo usted vestirse solo/a, incluyendo amarrarse las agujetas de los zapatos y abotonarse?]"
+R108,En esta sección nos interesa conocer cómo afecta su enfermedad a su capacidad para desempeñar sus actividades en la vida diaria. [¿Pudo usted lavarse el cabello? ]
+R109,En esta sección nos interesa conocer cómo afecta su enfermedad a su capacidad para desempeñar sus actividades en la vida diaria. [¿Pudo usted levantarse de una silla sin apoyarse?]
+R110,En esta sección nos interesa conocer cómo afecta su enfermedad a su capacidad para desempeñar sus actividades en la vida diaria. [¿Pudo usted acostarse y levantarse de la cama? ]
+R111,En esta sección nos interesa conocer cómo afecta su enfermedad a su capacidad para desempeñar sus actividades en la vida diaria. [¿Pudo usted cortar la carne? ]
+R112,En esta sección nos interesa conocer cómo afecta su enfermedad a su capacidad para desempeñar sus actividades en la vida diaria. [¿Pudo usted llevarse a la boca una taza o un vaso llenos? ]
+R113,En esta sección nos interesa conocer cómo afecta su enfermedad a su capacidad para desempeñar sus actividades en la vida diaria. [¿Pudo usted abrir una caja nueva de un litro de leche?]
+R114,En esta sección nos interesa conocer cómo afecta su enfermedad a su capacidad para desempeñar sus actividades en la vida diaria. [¿Pudo usted caminar fuera de su casa en un terreno plano?]
+R115,En esta sección nos interesa conocer cómo afecta su enfermedad a su capacidad para desempeñar sus actividades en la vida diaria. [¿Pudo usted subir cinco escalones?]
+R116,"Si utiliza habitualmente algún UTENSILIO O APARATO DE AYUDA para hacer alguna de las actividades arriba mencionadas, por favor, márquelo con una cruz en la lista siguiente: [Bastón]"
+R117,"Si utiliza habitualmente algún UTENSILIO O APARATO DE AYUDA para hacer alguna de las actividades arriba mencionadas, por favor, márquelo con una cruz en la lista siguiente: [Andadera]"
+R118,"Si utiliza habitualmente algún UTENSILIO O APARATO DE AYUDA para hacer alguna de las actividades arriba mencionadas, por favor, márquelo con una cruz en la lista siguiente: [Muletas]"
+R119,"Si utiliza habitualmente algún UTENSILIO O APARATO DE AYUDA para hacer alguna de las actividades arriba mencionadas, por favor, márquelo con una cruz en la lista siguiente: [Silla de ruedas]"
+R120,"Si utiliza habitualmente algún UTENSILIO O APARATO DE AYUDA para hacer alguna de las actividades arriba mencionadas, por favor, márquelo con una cruz en la lista siguiente: [Aparatos utilizados para vestirse (gancho para abotonarse, aparato para subir cierres, calzador con mango largo, etc.) ]"
+R121,"Si utiliza habitualmente algún UTENSILIO O APARATO DE AYUDA para hacer alguna de las actividades arriba mencionadas, por favor, márquelo con una cruz en la lista siguiente: [Utensilios especialmente adaptados para cocinar o para comer]"
+R122,"Si utiliza habitualmente algún UTENSILIO O APARATO DE AYUDA para hacer alguna de las actividades arriba mencionadas, por favor, márquelo con una cruz en la lista siguiente: [Silla especialmente adaptada]"
+R123,"Si utiliza habitualmente algún UTENSILIO O APARATO DE AYUDA para hacer alguna de las actividades arriba mencionadas, por favor, márquelo con una cruz en la lista siguiente: [Otro]"
+R124,"Por favor, marque la respuesta que mejor describa su capacidad habitual DURANTE LA SEMANA PASADA: [¿Pudo usted lavar y secar su cuerpo?]"
+R125,"Por favor, marque la respuesta que mejor describa su capacidad habitual DURANTE LA SEMANA PASADA: [¿Pudo usted tomar un baño de tina (por ej. doblando las rodillas, etc)?]"
+R126,"Por favor, marque la respuesta que mejor describa su capacidad habitual DURANTE LA SEMANA PASADA: [¿Pudo usted sentarse y levantarse de la taza? ]"
+R127,"Por favor, marque la respuesta que mejor describa su capacidad habitual DURANTE LA SEMANA PASADA: [¿Pudo usted alcanzar y bajar un objeto de aproximadamente 2 kilos (por ej. una botella de refresco familiar) que estuviera por encima de su cabeza?]"
+R128,"Por favor, marque la respuesta que mejor describa su capacidad habitual DURANTE LA SEMANA PASADA: [¿Pudo usted agacharse para recoger ropa del suelo?]"
+R129,"Por favor, marque la respuesta que mejor describa su capacidad habitual DURANTE LA SEMANA PASADA: [¿Pudo usted abrir las puertas de un carro?]"
+R130,"Por favor, marque la respuesta que mejor describa su capacidad habitual DURANTE LA SEMANA PASADA: [¿Pudo usted abrir frascos que ya han sido abiertos?]"
+R131,"Por favor, marque la respuesta que mejor describa su capacidad habitual DURANTE LA SEMANA PASADA: [¿Pudo usted abrir y cerrar las llaves del agua? ]"
+R132,"Por favor, marque la respuesta que mejor describa su capacidad habitual DURANTE LA SEMANA PASADA: [¿Pudo usted hacer mandados e ir de compras? ]"
+R133,"Por favor, marque la respuesta que mejor describa su capacidad habitual DURANTE LA SEMANA PASADA: [¿Pudo usted entrar y salir de un carro? ]"
+R134,"Por favor, marque la respuesta que mejor describa su capacidad habitual DURANTE LA SEMANA PASADA: [¿Pudo usted hacer tareas domésticas (por ej. barrer, arreglar el jardín)?]"
+R135,"Si utiliza habitualmente algún UTENSILIO O APARATO DE AYUDA para hacer alguna de las actividades arriba mencionadas, por favor, márquelo con una cruz en la lista siguiente: [Asiento elevado en la taza]"
+R136,"Si utiliza habitualmente algún UTENSILIO O APARATO DE AYUDA para hacer alguna de las actividades arriba mencionadas, por favor, márquelo con una cruz en la lista siguiente: [Asiento para bañarse ]"
+R137,"Si utiliza habitualmente algún UTENSILIO O APARATO DE AYUDA para hacer alguna de las actividades arriba mencionadas, por favor, márquelo con una cruz en la lista siguiente: [Abridor de frascos (para frascos que ya han sido abiertos)]"
+R138,"Si utiliza habitualmente algún UTENSILIO O APARATO DE AYUDA para hacer alguna de las actividades arriba mencionadas, por favor, márquelo con una cruz en la lista siguiente: [Barra para agarrarse en la tina/regadera ]"
+R139,"Si utiliza habitualmente algún UTENSILIO O APARATO DE AYUDA para hacer alguna de las actividades arriba mencionadas, por favor, márquelo con una cruz en la lista siguiente: [Aparatos con mango largo para alcanzar cosas ]"
+R140,"Si utiliza habitualmente algún UTENSILIO O APARATO DE AYUDA para hacer alguna de las actividades arriba mencionadas, por favor, márquelo con una cruz en la lista siguiente: [Aparatos con mango largo en el baño (tales como un cepillo para la espalda) ]"
+R141,"Si utiliza habitualmente algún UTENSILIO O APARATO DE AYUDA para hacer alguna de las actividades arriba mencionadas, por favor, márquelo con una cruz en la lista siguiente: [Otro]"
+R142,"Si en alguna de estas actividades suele necesitar LA AYUDA DE OTRA PERSONA, por favor, márquela con una cruz en la lista siguiente: [Higiene]"
+R143,"Si en alguna de estas actividades suele necesitar LA AYUDA DE OTRA PERSONA, por favor, márquela con una cruz en la lista siguiente: [Alcanzar cosas]"
+R144,"Si en alguna de estas actividades suele necesitar LA AYUDA DE OTRA PERSONA, por favor, márquela con una cruz en la lista siguiente: [Agarrar y abrir cosas]"
+R145,"Si en alguna de estas actividades suele necesitar LA AYUDA DE OTRA PERSONA, por favor, márquela con una cruz en la lista siguiente: [Hacer mandados y tareas domésticas]"
+HAQ,HAQ
+HAQ-Bin,HAQ-Bin
+R168,DefuncionesNacionales
+R169,ConfirmadosNacionales
+R170,CutAge
+R171,CutDate
+R171c,CutDateStr
+R172,CutEdu
+R173,HesitancyMean
+R174,HesitancyMeanBin
+R175,SeguridadSocial
+R176,EnfermedadReuma
+R177,Cormo
+'R70 - R77c',1. ¿Aceptaría alguna de las vacunas (aprobadas en México) para la COVID-19 si se le ofreciera?
+ 'R71 - R78c',2. En la actualidad existen varias vacunas para la COVID-19. Usted considera que:
+ 'R72 - R79c',3. Describiría mi actitud con respecto a recibir la vacuna para la COVID-19 como:
+ 'R73 - R80c',"4. Si ya estuviera disponible para usted una vacuna para la COVID-19, ¿qué haría?"
+ 'R74 - R83c',"5. Si mi familia o amigos estuvieran pensando en vacunarse para la COVID-19, yo haría lo siguiente:"
+ 'R75 - R82c',"6. Con respecto a recibir la vacuna para la COVID-19, yo me describiría como:"
+ 'R76 - R81c',7. Considero que recibir una vacuna para la COVID-19 es:
