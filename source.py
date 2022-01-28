@@ -1251,6 +1251,76 @@ file_O = Path("Data/out/crosstab.xlsx")
 file_save = cwd / file_O
 CQ.to_excel(file_save)
 
+#numero de dosis
+columnsetsp = np.r_[35]
+dataset_temp1= data_I_HGM.iloc[:,columnsetsp]
+columnsetsp = np.r_[32]
+dataset_temp2= data_I_HGM.iloc[:,columnsetsp]
+dataset_dependents = dataset_temp2.iloc[:,0] + dataset_temp1.iloc[:,0]
+dataset_dependents = dataset_dependents.map({1:"Una dosis", 0:"No vacunado", 2:"Dos dosis"})
+#columnset = np.r_[1,4:7,133,136,8,137:139,31,47:49,67:70,139:146]
+columnset = np.r_[1,4:7,133,136,8,73:84,17:30,31,47:49,67:70,139:146]
+dataset_test= data_I_HGM.iloc[:,columnset]
+dataset_test.rename(columns={"R1":"Hospital", "R13": "Edad", "R14":"Sexo","R15":"Estado civil", "R172":"Educacion", "R17": "Ocupación", "R175":"Seguridad Social", "R176":"Diagnóstico", "R157":"Enfermedad pulmonar","R158":"Infarto agudo de miocardio","R159":"Otra enfermedad cardiovascular","R160":"Enfermedad vascular cerebral","R161":"Hipertensión arterial sistémica","R162":"Diabetes mellitus","R163":"Fractura de cadera/columna o pierna","R164":"Depresión","R165":"Cancer","R166":"Ulcera gastrointestinal","R167":"Otras enfermedades gástrica","R168":"Otro", "R60":"¿Usted requirió hospitalización?","R62":"¿Ya fue vacunado?","R63":"¿Ha tenido la oportunidad de vacunarse?","R65":"¿Cuenta con el esquema completo?","R70 - R77c":"¿Aceptaría alguna de las vacunas si se le ofreciera?","R71 - R78c":"Existen varias vacunas. Usted considera que","R72 - R79c":"Mi actitud con respecto a recibir la vacuna","R73 - R80c":"Si ya estuviera disponible, ¿qué haría?","R74 - R83c":"Si mi familia o amigos estuvieran pensando en vacunarse","R75 - R82c":"Con respecto a recibir la vacuna, yo me describiría como","R76 - R81c":"Recibir una vacuna es","R84":"¿Cree que se infectará?","R85":"Probabilidad que me funcione","R105":"Vacunado influenza","R148":"¿Cómo se siente en este momento?","R149":"Sistema inmune","R26":"Lupus eritematoso generalizado","R27":"Artritis reumatoide","R28":"Vasculitis ANCA","R29":"Espondilitis anquilosante","R30":"Esclerodermia","R31":"Gota","R32":"Síndrome de Sjögren","R33":"Miopatía inflamatoria","R34":"Síndrome de anticuerpos antifosfolípidos","R35":"Artritits idiopática juvenil","R36":"Enfermedad mixta del tejido conectivo","R37":"Osteoartrosis","R38":"Otro"}, inplace = True)
+dataset_test.columns.tolist
+dataset_test.loc[:, dataset_test.dtypes == 'object'] =\
+        dataset_test.select_dtypes(['object'])\
+        .apply(lambda x: x.astype('category'))
+dataset_test.loc[:, dataset_test.isin([0,1]).all()] = dataset_test.loc[:, dataset_test.isin([0,1]).all()].apply(lambda x: x.astype('category'))
+dataset_test.info()
+dataset_test.insert(0, 'Dosis', dataset_dependents)
+
+ColNames = dataset_test.columns
+ColGrouped = ColNames[0]
+ColNames = np.delete(ColNames, [np.r_[0]], 0)
+ColTitles = {"No vacunado", "Una dosis","Dos dosis"}
+CQ  = pd.DataFrame(columns = ['Variable', "No vacunado", "Una dosis","Dos dosis",'p'])
+temp_totales = dataset_test[ColGrouped].value_counts()
+for coltitle in ColTitles:
+    CQ.loc['Totales',coltitle] = temp_totales[coltitle]
+for cols in ColNames:
+    title_data = [cols]
+    title = pd.DataFrame(title_data, index=[0])
+    if(is_categorical(dataset_test[cols])):
+        ctable = pd.crosstab(dataset_test[cols],dataset_test[ColGrouped])
+        ctablen = pd.crosstab(dataset_test[cols],dataset_test[ColGrouped], normalize='columns')*100.00
+        ctablen = ctablen.applymap(lambda x: " ({:.2f})".format(x))
+        stat, pvalue, dof, expected = ss.chi2_contingency(ctable)
+        ctable = ctable.astype(str)
+        ctable = ctable + ctablen
+        if((ctable.index == 0).any()):
+            ctable = ctable.drop(0)
+            ctable.rename({1:"Sí"}, inplace = True) 
+        if(pvalue < 0.001):
+            ctable.loc[ctable.index[0], 'p'] = '<0.001'
+        else:
+            ctable.loc[ctable.index[0], 'p'] = "{:.3f}".format(pvalue) 
+        #ctable.loc[ctable.index[0], 'Valor estadistica'] ="{:.2f}".format(stat)
+    else:
+        dataset_numeric = pd.concat([dataset_test[cols], dataset_test[ColGrouped]], axis=1)
+        #correlation, pvalue = ss.pointbiserialr(dataset_test[ColGrouped], dataset_test[cols])
+        x = []
+        for coltitle in ColTitles:
+            x.append(dataset_numeric.loc[dataset_numeric[ColGrouped] == coltitle,cols])
+        correlation, pvalue = ss.kruskal(*x)
+        ctable = dataset_numeric.groupby(ColGrouped).mean().T
+        ctable = ctable.applymap(lambda x: "{:.2f}".format(x))
+        ctabled = dataset_numeric.groupby(ColGrouped).std().T
+        ctabled = ctabled.applymap(lambda x: " ({:.2f})".format(x))
+        ctable = ctable + ctabled
+        if(pvalue < 0.001):
+            ctable.loc[ctable.index[0], 'p'] = '<0.001'
+        else:
+            ctable.loc[ctable.index[0], 'p'] = "{:.3f}".format(pvalue)  
+    title.rename(columns={0:"Variable"}, inplace = True)
+    ctable = title.append(ctable)
+    CQ  =  CQ.append(ctable)
+CQ = CQ.replace(np.nan,'',regex = True)
+file_O = Path("Data/out/crosstab.xlsx")
+file_save = cwd / file_O
+CQ.to_excel(file_save)
+
+
 #time
 columnset = np.r_[40:47]#40:47
 dataset_dependents= data_I_HGM.iloc[:,columnset]
@@ -1513,6 +1583,9 @@ for cat_id in range(0, time_cats):
     plt.savefig(file_save, format=image_format, dpi=1200)
     plt.close()
 
+#cosine simmilitued
+cosine_similarity(df)
+
 #matriz de asociacion de cramer correlacion chi-square
 columnset = np.r_[139:146]
 dataset_test= data_I_HGM.iloc[:,columnset]
@@ -1554,6 +1627,7 @@ plt.savefig(file_save, format=image_format, dpi=1200, transparent=True)
 plt.close()
 
 #logistic regresion
+#new set
 columnset = np.r_[1,4:7,136,8,137:139,31:34,35,47:49,67:70]#,138:146]#17:89]#   ,]
 dataset_test= data_I_HGM.iloc[:,columnset]
 dataset_test['R62'] = dataset_test['R62'].map({1:"Sí", 0:"No"})
@@ -1599,6 +1673,18 @@ for name, values in dataset_dependents.iteritems():
 file_O = Path("Data/out/" + "OddsAll.xlsx")
 file_save = cwd / file_O
 dataset_odds.to_excel(file_save)
+
+
+
+
+
+
+
+
+
+
+
+
 #%% Correlation
 # columnset = np.r_[5:10, 11:89]
 # columnset = np.r_[5:10, 11:85]
