@@ -1,5 +1,3 @@
 # Vacunacion
 
-Proyecto de analisis de aceptacion de la vacunacion COVID-19
-
-Analisis estadistico de likert
+Proyecto de análisis de aceptación de la vacunación COVID-19 de 4 centros de salud en México
